@@ -4,8 +4,15 @@
     "version": "1.0",
     "description": "Chrome extension to change profile pictures in LinkedIn posts.",
     "permissions": [
-      "activeTab"
+      "activeTab",
+      "storage"
     ],
+    "action":{
+      "default_popup":"popup.html",
+      "default_icon":{
+        "48":"images/link_icon_48.png"
+      }
+    },
     "content_scripts": [
       {
         "matches": ["https://www.linkedin.com/*"],
